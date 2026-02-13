@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fate</title>
+
+<style>
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    color: black;
+}
+
+.audio-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="mainText">Ainda não.</h1>
+
+<div class="audio-link" onclick="playAudio()"></div>
+
+<audio id="audio">
+  <source src="g.ogg" type="audio/ogg">
+</audio>
+
+<a id="secret" class="hidden" href="https://www.mediafire.com/file/514lsplgvgdghc2/Real_Fate.txt/file" target="_blank">
+The Fate Is Coming.
+</a>
+
+<script>
+function playAudio() {
+    var audio = document.getElementById("audio");
+    audio.play();
+
+    audio.onended = function() {
+        document.getElementById("mainText").style.display = "none";
+        document.getElementById("secret").style.display = "block";
+    };
+}
+</script>
+
+</body>
+</html>
