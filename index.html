@@ -1,68 +1,511 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Fate</title>
+<meta charset="UTF-8">
+<title>Project Techno</title>
 
 <style>
-body {
-    background-color: black;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: Arial;
-    overflow: hidden;
+body{
+    background:#ffffff;
+    color:#1a1a1a;
+    font-family: "Cascadia Code", Consolas, monospace;
+    margin:60px;
 }
 
-h1 {
-    font-weight: normal;
+.note{
+    max-width:700px;
+    line-height:1.6;
 }
 
-.hidden {
-    display: none;
-    position: absolute;
-    color: black;
+.author{
+    color:#555;
 }
 
-.audio-link {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
 </style>
 </head>
 
 <body>
 
-<h1 id="mainText">Ainda não.</h1>
+<div class="note">
 
-<div class="audio-link" onclick="playAudio()"></div>
+<p class="author">[LOG_01 - Ennard]</p>
 
-<audio id="audio">
-  <source src="g.ogg" type="audio/ogg">
-</audio>
+<p>
+Josh keeps reporting identical dreams.
+</p>
 
-<a id="secret" class="hidden" href="https://www.mediafire.com/file/514lsplgvgdghc2/Real_Fate.txt/file" target="_blank">
-The Fate Is Coming.
-</a>
+<p>
+He describes corridors that do not exist
+and people that do not belong in this space.
+</p>
 
-<script>
-function playAudio() {
-    var audio = document.getElementById("audio");
-    audio.play();
+<p>
+If the theory is correct,
+these individuals are not simply dreaming.
+</p>
 
-    audio.onended = function() {
-        document.getElementById("mainText").style.display = "none";
-        document.getElementById("secret").style.display = "block";
-    };
-}
-</script>
+<p>
+They are crossing.
+</p>
 
-</body>
-</html>
+<p class="author">[Josh]</p>
+
+<p>
+So you think there are people
+who can travel between dreams?
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+Not "between".
+</p>
+
+<p>
+I think some of them never woke up.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+...but I've been feeling strange since one of those dreams.
+</p>
+
+
+
+<p class="author">[LOG_02 - 26/06/1987 -- Ennard]</p>
+
+<p>
+That space you keep describing,
+could you explain what it looked like?
+</p>
+
+<p>
+It might help with the configuration of subjects 01
+and possibly 02 as well.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+Alright... I can try to summarize it.
+</p>
+
+<p>
+I remember a lot of details,
+which is weird for a normal dream.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+The corridor had doors.
+Even though the hallway itself was completely dark.
+</p>
+
+<p>
+The doors were bright,
+but nothing could be seen beyond them.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+Even when they were empty,
+each one had a sequence of voices behind it.
+</p>
+
+<p>
+They were saying something,
+but I couldn't distinguish the words.
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+That is... extremely unusual.
+</p>
+
+<p>
+Even if there was an explanation,
+it would still be strange.
+</p>
+
+<p>
+You don't see many doors during your shift,
+and you certainly don't encounter many people either.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+Maybe it's just paranoia from working here too much.
+</p>
+
+
+
+<p class="author">[LOG_03 - 28/06/1987 -- Josh]</p>
+
+<p>
+By the way, why was there a little girl talking to you earlier?
+</p>
+
+<p>
+If she was any taller she could have taken a fatal shock.
+</p>
+
+<p>
+You're lucky VH didn't show up today.
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+That was my daughter.
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+And she had the same dream.
+</p>
+
+<p>
+Exactly the same one you described yesterday.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+I'm honestly surprised someone wanted to have a kid with you.
+</p>
+
+<p>
+hahahahaha
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+Oh shut up.
+</p>
+
+<p>
+hahahaha
+</p>
+
+<p class="author">[LOG_04 - 03/07/1987 -- Ennard]</p>
+
+<p>
+Josh, I haven't seen you since the 30th.
+</p>
+
+<p>
+I heard about what happened with Avery.
+I'm sorry about that.
+</p>
+
+<p>
+If something's going on, you can talk to me.
+You don't have to deal with it alone.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+...thanks, but I'm not really in the mood today.
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+That's fine. I just wanted to make sure you're okay.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+I'm fine.
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+Alright. Just don't disappear again.
+Things have been getting strange around here.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+Strange how?
+</p>
+
+<p class="author">[Ennard]</p>
+
+<p>
+Another report about the corridor.
+Same description you gave me.
+</p>
+
+<p>
+Dark hallway.
+Bright doors.
+Voices behind them.
+</p>
+
+<p>
+And this time it wasn't you.
+</p>
+
+<p class="author">[Josh]</p>
+
+<p>
+...
+</p>
+
+<p>
+Yeah, that's not normal.
+</p>
+
+<p class="author">[LOG_05 - 06/07/1987 -- Ennard]</p>
+
+<p>
+Josh, you haven't shown up again.
+I tried calling the office but no one answered.
+</p>
+
+<p>
+If this is about Avery... I understand.
+But disappearing won't help you.
+</p>
+
+<p>
+Please respond when you see this.
+</p>
+
+
+
+<p class="author">[LOG_06 - 08/07/1987 -- Ennard]</p>
+
+<p>
+Still nothing.
+</p>
+
+<p>
+Your workstation has been inactive for two days.
+VH asked about you this morning.
+I said you were sick.
+</p>
+
+<p>
+If you're reading this, just confirm you're alive.
+That's all I'm asking.
+</p>
+
+
+
+<p class="author">[LOG_07 - 10/07/1987 -- Ennard]</p>
+
+<p>
+Josh, something strange happened today.
+</p>
+
+<p>
+Another report about the same corridor.
+Same description you gave me.
+</p>
+
+<p>
+This time it wasn't you.
+</p>
+
+<p>
+A technician from maintenance described the exact same doors.
+</p>
+
+<p>
+I need to talk to you.
+This is getting out of hand.
+</p>
+
+
+
+<p class="author">[LOG_08 - 12/07/1987 -- Ennard]</p>
+
+<p>
+Josh.
+</p>
+
+<p>
+If you're ignoring me on purpose, just say it.
+</p>
+
+<p>
+I can't keep covering for you forever.
+VH already suspects something.
+</p>
+
+<p>
+And if the dreams are affecting you this badly,
+we need to document it properly.
+</p>
+
+<p>
+Please answer.
+</p>
+
+
+
+<p class="author">[LOG_09 - 13/07/1987 -- Josh]</p>
+
+<p>
+You really don't know when to shut up, do you?
+</p>
+
+<p>
+I've been dealing with real problems here
+and all you do is spam these logs like a paranoid idiot.
+</p>
+
+<p>
+Maybe if you spent less time playing scientist
+and more time doing your actual job,
+none of this would be happening.
+</p>
+
+<p>
+And stop pretending you care.
+You don't.
+You just want data.
+</p>
+
+
+
+<p class="author">[Ennard]</p>
+
+<p>
+Excuse me?
+</p>
+
+<p>
+I've been trying to make sure you're still alive.
+</p>
+
+<p>
+If you think I'm doing this for "data",
+you clearly don't understand what is happening here.
+</p>
+
+
+
+<p class="author">[Josh]</p>
+
+<p>
+Oh I understand perfectly.
+</p>
+
+<p>
+You're obsessed with those stupid dreams
+and now you're dragging everyone into your little theory.
+</p>
+
+<p>
+You're losing it.
+</p>
+
+
+
+<p class="author">[Ennard]</p>
+
+<p>
+And you're acting like a child.
+</p>
+
+<p>
+People are reporting the same phenomenon.
+That means something is happening.
+</p>
+
+<p>
+But apparently you'd rather insult me than help figure it out.
+</p>
+
+
+
+<p class="author">[LOG_10 - 15/07/1987 -- Ennard]</p>
+
+<p>
+I'm not continuing this argument.
+</p>
+
+<p>
+However, there is something you should know.
+</p>
+
+<p>
+Lanika had the same dream again last night.
+She said she heard the voices behind the doors.
+</p>
+
+<p>
+One of them said something different this time.
+</p>
+
+<p>
+She draw and wrote it down for me.
+</p>
+
+<p>
+I even recorded your report.
+</p>
+
+<p>
+<a href="recording.html">listen</a>
+</p>
+
+<p>
+and i thought in something
+Someone observing her...
+</p>
+
+<p>
+If you still think this is a coincidence,
+I don't know what else to tell you.
+</p>
+
+
+
+<p class="author">[NOTICE]</p>
+
+<p>
+The following sections of this document have been partially censored
+by the Digital Security and Protection Division of
+Eternal Technologies (DSPD-ET).
+</p>
+
+<p>
+Certain references involving a minor individual related to the
+"Main Presentation Incident" have been redacted
+to preserve identity and legal protection.
+</p>
+
+
+
+<p class="author">[DSPD-ET REDACTION]</p>
+
+<p>
+Reference to minor individual: ████████████
+</p>
+
+<p>
+Relationship: daughter of employee ████████████ ████ ████████████
+</p>
+
+<p>
+Incident classification: "Main Presentation"
+</p>
+
+<p>
+All further mentions will remain partially censored.
+</p>
